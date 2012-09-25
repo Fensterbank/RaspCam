@@ -267,10 +267,5 @@
 	  </svg>
       </div>
       <img id="imgWebcam" src="lastframe.png">
-      <p id="subtext">
-		Demoseite von RaspCam, einer Aufnahme- und Streaminglösung für den <a href="http://de.wikipedia.org/wiki/Raspberry_Pi" target="_blanc">Raspberry Pi</a><br />
-		Copyright 2012 - Frédéric Bolvin<br />
-		<a href="http://bolvin.de/raspcam/" target="_blanc">Detaillierte Projektbeschreibung</a> ❖ <a href="https://github.com/Fensterbank/RaspCam" target="_blanc">Source-Code auf Github</a>
-	</p>
   </body>
 </html>

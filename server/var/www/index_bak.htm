@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Alphabasis</title>
+    <title>RaspCam</title>
     <meta charset="UTF-8">
     <style type="text/css">
       body {
@@ -29,14 +29,14 @@
 	font-weight: bolder;
       }
       
-      #imgWebcam {
+      #video {
 	display: block;	
 	border: medium none currentColor;
 	box-shadow: 0px 0px 10px #383838;
 	margin: 30px auto;
 	padding: 10px;
       }
-      
+
       #subtext {
 	margin: 30px auto;
 	font-size: 12px;
@@ -61,11 +61,8 @@
     </style>
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript">
-    $(document).ready( function () {
-      setInterval(function() {	      
-	$("#imgWebcam").attr("src", "lastframe.png" +'?'+Math.random());
-      }, 1000);
-    });    
+      var video = document.getElementsByTagName("video")[0];
+      video.currentTime = 100;
     </script>
   </head>
   <body>
@@ -266,11 +263,14 @@
 	    </g>
 	  </svg>
       </div>
-      <img id="imgWebcam" src="lastframe.png">
-      <p id="subtext">
+      <video id="video" src="stream.webm" autoplay="autoplay" preload type="video/webm" controls>  
+            Your browser doesn't appear to support the HTML5 <code>&lt;video&gt;</code> element.  
+     </video>      
+	<p id="subtext">
 		Demoseite von RaspCam, einer Aufnahme- und Streaminglösung für den <a href="http://de.wikipedia.org/wiki/Raspberry_Pi" target="_blanc">Raspberry Pi</a><br />
 		Copyright 2012 - Frédéric Bolvin<br />
 		<a href="http://bolvin.de/raspcam/" target="_blanc">Detaillierte Projektbeschreibung</a> ❖ <a href="https://github.com/Fensterbank/RaspCam" target="_blanc">Source-Code auf Github</a>
 	</p>
   </body>
 </html>
+
